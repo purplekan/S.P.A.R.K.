@@ -11,6 +11,8 @@ A l'occasion de l'Arduino's Day, notre école(Cours-Lumière Eseo-Togo) a été 
 Après nous avoir expliqué en quoi devait consister le travail, nous avons été divisés en 4 groupes. C'est ainsi que Wilfried, Adebayo, Jules et Kenneth(moi) comme le responsable avons été réunis. 
 ![WhatsApp Image 2024-03-16 à 11 12 30_8e713fb9](https://github.com/purplekan/S.P.A.R.K./assets/162813789/06a1ec63-34f9-4546-a001-493c2e0c38f2)
 
+Il est important d'être méthodique et d'évoluer progressivement, c'est pourquoi nous avons commencé par se réunir et proprement se définir en tant que groupe : V Team.
+![image](https://github.com/purplekan/S.P.A.R.K./assets/162813789/453f7e84-2da2-4e54-819c-c35d618d3670)
 
 
 
