@@ -21,3 +21,10 @@ Pour avancer, il faut une raison. Qu'est ce qui nous a poussé à concevoir S.P.
 ![image](https://github.com/purplekan/S.P.A.R.K./assets/162813789/566ce750-a140-473e-a32b-714a58df361e)
 Il y a d'abord eu quelques idées de robots que nous avons eu mais c'est S.P.A.R.K. qui, au final, nous a intéressé du fait de son utilité, de sa simplicité et du thème du Bootcamp.
 Il vient résoudre le problème de mauvaise organisation auquel nombre d'entre nous fait face. 
+S.P.A.R.K. doit être capable de **donner envie** de réaliser la tâche. Un grand effort sera donc consacré afin que l'apparence comme le comportement du robot soit intéressant. 
+
+# **Fonctionnalités**
+Après discussion, nous avons enfin pu dégager les 
+
+
+
