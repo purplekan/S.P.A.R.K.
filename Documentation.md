@@ -14,7 +14,10 @@ Après nous avoir expliqué en quoi devait consister le travail, nous avons ét�
 Il est important d'être méthodique et d'évoluer progressivement, c'est pourquoi nous avons commencé par se réunir et proprement se définir en tant que groupe : V Team.
 ![image](https://github.com/purplekan/S.P.A.R.K./assets/162813789/453f7e84-2da2-4e54-819c-c35d618d3670)
 
+C'est dans ce groupe que nous avons échangé jusqu'à présent. Nous avons préféré d'éviter au maximum les messages vocaux afin de faciliter l'extraction d'informations un peu plus tard. 
 
+# Problématique
+Pour avancer, il faut une raison. Qu'est ce qui nous a poussé à concevoir S.P.A.R.K. ?
 
 
 
