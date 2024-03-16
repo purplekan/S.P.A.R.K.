@@ -24,7 +24,16 @@ Il vient résoudre le problème de mauvaise organisation auquel nombre d'entre n
 S.P.A.R.K. doit être capable de **donner envie** de réaliser la tâche. Un grand effort sera donc consacré afin que l'apparence comme le comportement du robot soit intéressant. 
 
 # **Fonctionnalités**
-Après discussion, nous avons enfin pu dégager les 
+Après discussion, nous avons enfin pu dégager les fonctionnalités de notre robot. Cela a nécessité la suppression de nombreuses autres fonctionnalités dû aux contraintes de matériel et de temps(deux semaines pour la conception). Voici les fonctionnalités qui ont été retenues :
+| Fonctionnalité              | Description                                                                                                                                 | Degré d'Importance |
+|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
+| Alarme                      | Définit des alarmes pour différentes heures de la journée afin de réveiller les utilisateurs ou de les rappeler à des événements importants. | Élevé             |
+| Agenda                      | Fournit les tâches et les événements prévus pour la journée, aidant ainsi les utilisateurs à planifier leur emploi du temps.              | Élevé             |
+| Interaction Sociale         | Fait des blagues ou donne des mots d'encouragement pour divertir et amuser les utilisateurs.                                                | Moyen             |
+| Gestion des Tâches          | Permet aux utilisateurs de créer, modifier et supprimer des listes de tâches pour rester organisés.                                         | Élevé             |
+| Mobilité de SPARK           | Capacité de se déplacer de manière autonome pour accéder à différentes pièces ou zones.                                                      | Moyen             |
+| Livraison d'Objets (Optionnel) | Possibilité de transporter et de livrer des objets légers d'un endroit à un autre.                                                           | Faible            |
+
 
 
 
