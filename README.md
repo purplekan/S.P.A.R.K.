@@ -1,9 +1,5 @@
 # S.P.A.R.K.
-Un robot assistant personnel 
-DOCUMENTATION
-
-				
-PROJET BOOTCAMP 2024
+##DOCUMENTATION PROJET BOOTCAMP 2024
 
 « S.P.A.R.K. »
 Ce projet vous est présenté par les étudiants d’Eseo-Togo : 
