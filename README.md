@@ -68,3 +68,12 @@ C'est très loin du niveau attendu d'un étudiant en prépa, mais je crois ferme
 
 Comme vous avez pu le remarquer, il y a eu entre temps quelques modifications mais nous y reviendrons.
 
+## a. Essai de modélisation 
+Il m'était d'abord venu à l'idée, de modéliser les 6 faces séparément afin de ne pas avoir de complications lors du montage du circuit.
+Nous avons alors entamé la face principale, celle du devant : 
+![Capture d'écran 2024-03-17 085742](https://github.com/purplekan/S.P.A.R.K./assets/162813789/1916ad9d-7b65-44de-8657-1d5f5063a6ca)
+L'idée était de créér un trou de la taille des composants dans la face afin que nous puissions les insérer aisément plus tard. Ah quel naïf j'étais ! Comment aurais-je puis savoir que je m'enfonçais dans un piège. Le premier problème s'est posé quand je me suis retrouvé dans l'incapacité de mettre créér un trou de la forme du composant alors que j'avais enfin réussi à l'encastrer dans la face. Je me suis alors tourné vers mes supérieurs. Monsieur OLANLO me donna plus d'explications concernant ce qui me troublait, et comme pour appuyer ses paroles, il nous partagea le lien d'une vidéo youtube qui expliquait en partie comment parvenir au résultat souhaité. 
+https://youtu.be/83E3qum343k?si=9i2ab8cILzj7SOyi
+
+
+
