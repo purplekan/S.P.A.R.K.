@@ -16,7 +16,7 @@ Il est important d'être méthodique et d'évoluer progressivement, c'est pourqu
 
 C'est dans ce groupe que nous avons échangé jusqu'à présent. Nous avons préféré d'éviter au maximum les messages vocaux afin de faciliter l'extraction d'informations un peu plus tard. 
 
-# Problématique
+# # 1.Problématique
 Pour avancer, il faut une raison. Qu'est ce qui nous a poussé à concevoir S.P.A.R.K. ?
 ![image](https://github.com/purplekan/S.P.A.R.K./assets/162813789/566ce750-a140-473e-a32b-714a58df361e)
 Il y a d'abord eu quelques idées de robots que nous avons eu mais c'est S.P.A.R.K. qui, au final, nous a intéressé du fait de son utilité, de sa simplicité et du thème du Bootcamp.
