@@ -86,4 +86,14 @@ Cela m'a amené à reprendre de zéro :
 # To
 ![Capture d'écran 2024-03-17 113120](https://github.com/purplekan/S.P.A.R.K./assets/162813789/785b76ec-cf2a-463b-a73d-6a5848fd8410)
 
+## b. Début des hostilités 
+Une fois débloqué et déterminé à finir ce modèle, je me suis heurté à un nouveau mur : Comment vais-je gérer la mise en place des élémments dans le boîtier ? Comment vais je pouvoir rendre le boîtier ouvrable ?
+J'ai finalement opté pour un système de vis et j'ai continué à suivre le tutoriel avec beaucoup d'interruptions car je travaillais aussi durant le cours pour gagner du temps. 
+Petit à petit, les esquisses que l'on a réalisé etaient enfin modélisées. 
+Le modèle de base est maintenant fin prêt, mais il continuera à être modifié pour des raisons d'esthétique ou d'efficacité. D'ailleurs, je viens à nouveau de le modifier:
+![image](https://github.com/purplekan/S.P.A.R.K./assets/162813789/a4c46916-6948-463a-8736-007cda0caff2)
+
+## 3. Circuits
+
+
 
