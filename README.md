@@ -75,5 +75,15 @@ Nous avons alors entamé la face principale, celle du devant :
 L'idée était de créér un trou de la taille des composants dans la face afin que nous puissions les insérer aisément plus tard. Ah quel naïf j'étais ! Comment aurais-je puis savoir que je m'enfonçais dans un piège. Le premier problème s'est posé quand je me suis retrouvé dans l'incapacité de mettre créér un trou de la forme du composant alors que j'avais enfin réussi à l'encastrer dans la face. Je me suis alors tourné vers mes supérieurs. Monsieur OLANLO me donna plus d'explications concernant ce qui me troublait, et comme pour appuyer ses paroles, il nous partagea le lien d'une vidéo youtube qui expliquait en partie comment parvenir au résultat souhaité. 
 https://youtu.be/83E3qum343k?si=9i2ab8cILzj7SOyi
 
+Suivre le tutoriel a été jusque là, la chose la plus dure que j'ai eu à faire. 
+Arrivé à la treizième minute, j'étais bloqué. Peu importe ce que j'essayais, il n'y avait pas moyen de passer à l'étape suivante.
+J'ai été bloqué à onze heures. C'est à vingt-et-une heures que j'ai enfin réussi. Comment ai-je fait ?
+J'ai d'abord mis la vidéo en vitesse ralentie(0.75), j'ai regardé encore et encore. J'ai **comparé** chaque résultat que j'obtenais avec celui du gars de la vidéo. Ce n'est qu'ainsi que ma compréhension des outils de Fusion 360 a drastiquement augmenté. 
+Entre temps(grâce à la vidéo), je me suis rendu compte que j'avais la possibilité de modéliser le boitier lui même et pas seulement ses côtés. 
+Cela m'a amené à reprendre de zéro : 
+# From
+![Capture d'écran 2024-03-17 092420](https://github.com/purplekan/S.P.A.R.K./assets/162813789/c70f0a86-1e23-43ec-b641-96f3c8b66d01)
+# To
+![Capture d'écran 2024-03-17 113120](https://github.com/purplekan/S.P.A.R.K./assets/162813789/785b76ec-cf2a-463b-a73d-6a5848fd8410)
 
 
