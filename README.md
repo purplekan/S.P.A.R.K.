@@ -56,3 +56,15 @@ Vu la limite de temps de deux semaines, nous avons dû choisir des composants si
 
 # II. Il est temps de se mettre au travail !
 ## 1. Répartition des tâches 
+Après avoir clairement défini nos objectifs et ce dont on aura besoin pour les réaliser, il était enfin temps de partitionner le travail afin qu'il soit réalisé efficacement. Nous avions donc un groupe qui s'occupait des circuits à réaliser puis de l'autre, le groupe chargé de la modélisation 3D du robot.
+Bien entendu, il y a eu des moments où nous avons eu à discuter tous les quatres afin d'harmoniser nos travaux, afin de s'entraider et de s'échanger des conseils. 
+
+## 2. Modélisation 3D
+La modélisation du boîtier de S.P.A.R.K. n'a pas été de tout repos. En effet, après avoir décidé de la forme générale de notre robot, nous avons fais les esquisses des principales faces de ce boîtier. Il faut dire que c'était une première expérience pour nous, surtout que cela demandait des bases en dessin technique afin d'avoir un résultat potable. C'est non sans mal que nous sommes parvenus en quelque sorte à la face principale de S.P.A.R.K. Voyez plutôt par vous même : 
+![WhatsApp Image 2024-03-16 à 13 03 51_c4468697](https://github.com/purplekan/S.P.A.R.K./assets/162813789/67f42845-9552-4efc-916a-84e16ef20593)
+
+C'est très loin du niveau attendu d'un étudiant en prépa, mais je crois fermement que le plus important dans une représentation c'est que tous les détails y figurent. Après tout, le dessin peut etre arrangé. Je vous laisse entrevoir ce que c'est devenu une fois modélisé : 
+![image](https://github.com/purplekan/S.P.A.R.K./assets/162813789/7f0a8d09-e304-4d0e-abe2-646b47bf58c4)
+
+Comme vous avez pu le remarquer, il y a eu entre temps quelques modifications mais nous y reviendrons.
+
