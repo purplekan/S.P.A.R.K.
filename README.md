@@ -37,6 +37,21 @@ Après discussion, nous avons enfin pu dégager les fonctionnalités de notre ro
 Une fois ces fonctionnalités clairement définies, nous sommes passés aux choix de composants nécessaires à l'implémentation des fonctionnalités. 
 
 # **Liste du matériel**
-
+Vu la limite de temps de deux semaines, nous avons dû choisir des composants simples et rapidement accessibles. Ensemble, nous avons réfléchi à quel matériel utiliser pour chaque fonctionnalité de S.P.A.R.K. 
+| Matériel                | Description                                                                                             |
+|-------------------------|---------------------------------------------------------------------------------------------------------|
+| Buzzer                  | Pour simuler le son d'une alarme.                                                                       |
+| Boutons poussoirs       | Pour gérer tout type de touches et commander le robot.                                                  |
+| Écran LCD 16 * 2        | Pour afficher les informations.                                                                         |
+| Joystick analogique     | Pour accéder facilement au menu des fonctions du robot.                                      |
+| Arduino UNO             | Microcontrôleur principal du robot.                                                                     |
+| Module RTC              | Pour avoir l'heure en temps réel.                                                                       |
+| Module haut-parleur     | Pour produire du son à partir de l'Arduino.                                                              |
+| Batterie 9V             | Pour l'alimentation du robot.                                                                           |
+| Fils de connexion et Breadboard | Pour connecter les composants électroniques.                                                   |
+| LED témoin              | Pour indiquer l'état ou le fonctionnement du robot.                                                    |
+| PLA                     | Matériau pour le boîtier du robot.                                                                      |
+| Vis et écrous           | Pour assembler les composants du robot.                                                                 |
+| Pistolet à colle chaude et ruban adhésif | Pour le montage et la fixation des composants.                                           |
 
 
