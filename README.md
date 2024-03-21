@@ -149,6 +149,23 @@ Comment est ce que ça marche ?
 A l'aide du module RTC DS1302, nous nous assurons dans un premier temps de récupérer l'heure avec précision. On vérifie ensuite si l'heure actuelle correspond à l'heure définie pour la tâche.  
 Si c'est le cas, cela déclenche l'alarme, affiche la tâche associée sur l'écran LCD. Lorsqu'on appuie sur le bouton poussoir d'arrêt, l'alarme s'arrête, la prochaine tâche est affichée pendant dix secondes et enfin, la date et l'heure actuelles. Notons qu'il y a un intervalle d'une minute entre les vérifications.
 
+## 2. Diagramme de flux de la naviguation entre les tâches 
+```mermaid
+graph TD;
+    A[Afficher la tâche] --> B{Déplacement du joystick vers le bas ?};
+    B -->|Oui| C[Afficher la tâche suivante];
+    C --> D;
+    D --> E{Valeur de X négative et bouton enfoncé ?};
+    E -->|Oui| F[Retour à la page d'accueil];
+    F --> G[Effacer l'écran];
+    G --> H[Afficher la date et l'heure];
+    E -->|Non| D;
+    B -->|Non| I{Valeur de X positive et bouton enfoncé ?};
+    I -->|Oui| J[Supprimer la tâche actuelle];
+    J --> K[Afficher la tâche précédente ou suivante];
+    I -->|Non| B;
+```
+
 
 
 
