@@ -173,7 +173,8 @@ Que se passe t-il lorsqu'on veut défiler les tâches vers le bas ?
  Lorsque la valeur X du joystick est négative et le bouton du joystick est enfoncé, la fonction "retour" est activée :
    - L'écran est effacé.
    - La page d'accueil, affichant la date et l'heure, est affichée.
- Lorsque la valeur X du joystick est positive et le bouton du joystick est enfoncé, la fonction "supprimer" est activée :
+   
+Lorsque la valeur X du joystick est positive et le bouton du joystick est enfoncé, la fonction "supprimer" est activée :
    - La tâche actuellement affichée est effacée de l'écran.
    - La tâche précédente ou suivante est affichée, selon le mouvement du joystick.
 
