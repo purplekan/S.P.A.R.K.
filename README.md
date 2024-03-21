@@ -32,7 +32,7 @@ Après discussion, nous avons enfin pu dégager les fonctionnalités de notre ro
 | Agenda                      | Fournit les tâches et les événements prévus pour la journée, aidant ainsi les utilisateurs à planifier leur emploi du temps.              | Élevé             |
 | Interaction Sociale         | Fait des blagues ou donne des mots d'encouragement pour divertir et amuser les utilisateurs.                                                | Moyen             |
 | Gestion des Tâches          | Permet aux utilisateurs de créer, modifier et supprimer des listes de tâches pour rester organisés.                                         | Élevé             |
-| Mobilité de SPARK           | Capacité de se déplacer de manière autonome pour accéder à différentes pièces ou zones.                                                      | Moyen             |
+| Mobilité de SPARK (Optionnel)          | Capacité de se déplacer de manière autonome pour accéder à différentes pièces ou zones.                                                      | Faible             |
 | Livraison d'Objets (Optionnel) | Possibilité de transporter et de livrer des objets légers d'un endroit à un autre.                                                           | Faible            |
 
 Une fois ces fonctionnalités clairement définies, nous sommes passés aux choix de composants nécessaires à l'implémentation des fonctionnalités. 
