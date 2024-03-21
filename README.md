@@ -120,4 +120,16 @@ Aussi connu sous le nom de HW 504, c'est ce petit bijou qui servira à naviguer 
 ## d. Le Real Time Clock 🕒 DS1302
 En utilisant les bibliothèques <ThreeWire.h> et <RtcDS1302.h>, nous sommes en mesure de récupérer l'heure et la date précise au moment du téléversement. Cependant je ne sais pas si le RTC se base sur l'heure de l'ordinateur 🖥 ou le GMT.  
 **if (now.Hour() == X & now.Minute() == Y & now.Second() == Z)** nous permet de créér une condition avec une heure spécifique. Nous aurions aussi pu ajouter la date.
-C'est ce que l'on fera pour notre liste de tâches à afficher : des paramètres pour l'heure et la date de sorte que chaque tâche a des valeurs bien définies.
+C'est ce que l'on fera pour notre liste de tâches à afficher : des paramètres pour l'heure et la date de sorte que chaque tâche a des valeurs bien définies.  
+```mermaid
+graph TD;
+    A[Associer une tâche à une heure précise] --> B{Heure programmée atteinte ?};
+    B -->|Oui| C[Déclencher l'alarme];
+    C --> D[Effacer l'écran];
+    D --> E[Afficher la tâche associée];
+    E --> F[Attendre l'appui sur le bouton poussoir d'arrêt];
+    F --> G[Arrêter l'alarme];
+    G --> H[Afficher la prochaine tâche pendant 10 secondes];
+    H --> I[Effacer l'écran];
+    I --> J[Afficher l'heure et la date actuelles];
+    B -->|Non| B;
