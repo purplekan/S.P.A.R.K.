@@ -65,8 +65,9 @@ La modélisation du boîtier de S.P.A.R.K. n'a pas été de tout repos. En effet
 ![WhatsApp Image 2024-03-16 à 13 03 51_c4468697](https://github.com/purplekan/S.P.A.R.K./assets/162813789/67f42845-9552-4efc-916a-84e16ef20593)
 
 C'est très loin du niveau attendu d'un étudiant en prépa, mais je crois fermement que le plus important dans une représentation c'est que tous les détails y figurent. Après tout, le dessin peut etre arrangé. Je vous laisse entrevoir ce que c'est devenu une fois modélisé : 
-![image](https://github.com/purplekan/S.P.A.R.K./assets/162813789/7f0a8d09-e304-4d0e-abe2-646b47bf58c4)
+![image](https://github.com/purplekan/S.P.A.R.K./assets/162813789/7f0a8d09-e304-4d0e-abe2-646b47bf58c4)  
 
+J'en profite pour préciser que nous avons travaillé sur la version éducative de Fusion 360.
 Comme vous avez pu le remarquer, il y a eu entre temps quelques modifications mais nous y reviendrons.
 
 ## a. Essai de modélisation 
@@ -85,7 +86,8 @@ Cela m'a amené à reprendre de zéro :
 # From
 ![Capture d'écran 2024-03-17 092420](https://github.com/purplekan/S.P.A.R.K./assets/162813789/c70f0a86-1e23-43ec-b641-96f3c8b66d01)
 # To
-![Capture d'écran 2024-03-17 113120](https://github.com/purplekan/S.P.A.R.K./assets/162813789/785b76ec-cf2a-463b-a73d-6a5848fd8410)
+![Capture d'écran 2024-03-21 215242](https://github.com/purplekan/S.P.A.R.K./assets/162813789/f03192f5-db98-404a-9f2a-e9a4bc75c936)
+
 
 ## b. Début des hostilités 
 Une fois débloqué et déterminé à finir ce modèle, je me suis heurté à un nouveau mur : Comment vais-je gérer la mise en place des élémments dans le boîtier ? Comment vais je pouvoir rendre le boîtier ouvrable ?
