@@ -92,6 +92,9 @@ J'ai finalement opté pour un système de vis et j'ai continué à suivre le tut
 Petit à petit, les esquisses que l'on a réalisé etaient enfin modélisées. 
 Le modèle de base est maintenant fin prêt, mais il continuera à être modifié pour des raisons d'esthétique ou d'efficacité. D'ailleurs, je viens à nouveau de le modifier:
 ![image](https://github.com/purplekan/S.P.A.R.K./assets/162813789/a4c46916-6948-463a-8736-007cda0caff2)
+De retour après deux jours de bataille, après des soucis que nous avons rencontré au niveau des circuits et dont je parlerais un peu plus tard, la boîte a dû être refaite et adaptée à la nouvelle configuration :
+![Capture d'écran 2024-03-21 125641](https://github.com/purplekan/S.P.A.R.K./assets/162813789/3bcc2cbe-f0b8-413c-94ef-c1207aab03a2)   ![Capture d'écran 2024-03-21 125726](https://github.com/purplekan/S.P.A.R.K./assets/162813789/be9c5626-6536-4ddb-ad2b-b5251770baab)
+
 
 ## 3. Circuits
 
