@@ -121,6 +121,9 @@ Aussi connu sous le nom de HW 504, c'est ce petit bijou qui servira à naviguer 
 En utilisant les bibliothèques <ThreeWire.h> et <RtcDS1302.h>, nous sommes en mesure de récupérer l'heure et la date précise au moment du téléversement. Cependant je ne sais pas si le RTC se base sur l'heure de l'ordinateur 🖥 ou le GMT.  
 **if (now.Hour() == X & now.Minute() == Y & now.Second() == Z)** nous permet de créér une condition avec une heure spécifique. Nous aurions aussi pu ajouter la date.
 C'est ce que l'on fera pour notre liste de tâches à afficher : des paramètres pour l'heure et la date de sorte que chaque tâche a des valeurs bien définies.  
+
+# III- Fonctionnement de S.P.A.R.K.
+## 1. Diagramme de flux de l'alarme 
 ```mermaid
 graph TD;
     A[Associer une tâche à une heure précise] --> B{Heure programmée atteinte ?};
@@ -130,6 +133,27 @@ graph TD;
     E --> F[Attendre l'appui sur le bouton poussoir d'arrêt];
     F --> G[Arrêter l'alarme];
     G --> H[Afficher la prochaine tâche pendant 10 secondes];
+
+
+
     H --> I[Effacer l'écran];
     I --> J[Afficher l'heure et la date actuelles];
     B -->|Non| B;
+
+
+```
+Comment est ce que ça marche ?  
+A l'aide du module RTC DS1302, nous nous assurons dans un premier temps de récupérer l'heure avec précision. On vérifie ensuite si l'heure actuelle correspond à l'heure définie pour la tâche.  
+Si c'est le cas, cela déclenche l'alarme, affiche la tâche associée sur l'écran LCD. Lorsqu'on appuie sur le bouton poussoir d'arrêt, l'alarme s'arrête, la prochaine tâche est affichée pendant dix secondes et enfin, la date et l'heure actuelles. Notons qu'il y a un intervalle d'une minute entre les vérifications.
+
+
+
+
+
+
+
+
+
+
+
+
