@@ -118,6 +118,6 @@ Aussi connu sous le nom de HW 504, c'est ce petit bijou qui servira à naviguer 
 ![HW504_B_back](https://github.com/purplekan/S.P.A.R.K./assets/162813789/cbcde223-0892-4bf4-aa78-3fba7d4e18a3)
 
 ## d. Le Real Time Clock 🕒 DS1302
-En utilisant les bibliothèques <ThreeWire.h> et <RtcDS1302.h>, nous sommes en mesure de récupérer l'heure et la date précise au moment du téléversement. Cependant je ne sais pas si le RTC se base sur l'heure de l'ordinateur 🖥 ou le GMT.
+En utilisant les bibliothèques <ThreeWire.h> et <RtcDS1302.h>, nous sommes en mesure de récupérer l'heure et la date précise au moment du téléversement. Cependant je ne sais pas si le RTC se base sur l'heure de l'ordinateur 🖥 ou le GMT.  
 **if (now.Hour() == X & now.Minute() == Y & now.Second() == Z)** nous permet de créér une condition avec une heure spécifique. Nous aurions aussi pu ajouter la date.
 C'est ce que l'on fera pour notre liste de tâches à afficher : des paramètres pour l'heure et la date de sorte que chaque tâche a des valeurs bien définies 
