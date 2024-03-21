@@ -115,6 +115,9 @@ Lorsque l'alarme sonnera, l'écran affichera la tâche associée à cette heure 
 
 ## c. Le joystick analogique 🕹 
 Aussi connu sous le nom de HW 504, c'est ce petit bijou qui servira à naviguer entre les diffférentes tâches 
+![HW504_B_back](https://github.com/purplekan/S.P.A.R.K./assets/162813789/cbcde223-0892-4bf4-aa78-3fba7d4e18a3)
 
+## d. Le Real Time Clock 🕒 DS1302
+En utilisant les bibliothèques <ThreeWire.h> et <RtcDS1302.h>, nous sommes en mesure de récupérer l'heure et la date précise au moment du téléversement. Cependant je ne sais pas si le RTC se base sur l'heure de l'ordinateur 🖥 ou le GMT.
 
 
