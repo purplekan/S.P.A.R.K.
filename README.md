@@ -97,45 +97,24 @@ De retour après deux jours de bataille, après des soucis que nous avons rencon
 
 
 ## 3. Circuits
-## a. L'alarme 
+## a. L'alarme ⏰ 
 Nous avons commencé par la fonctionnalité de base de SPARK, celle qui lui permet de se comporter comme une alarme. Pour ce faire, nous avons suivi un certain nombre d'étapes afin de progressivement réussir :
 - faire sonner le buzzer
 - arrêter le son en appuyant sur un bouton
 - implémenter le bouton reset pour réintinialiser l'alarme
 - pouvoir récupérer une heure exacte à partir du RTC
 - faire sonner l'alarme(le buzzer) à une heure précise et pouvoir l'arrêter à ce moment
+Vous pourrez retrouver le code dans le dossier documentation.
+En ce qui concerne le fonctionnement, c'est assez simple. Une constante "state" est créée. C'est elle qui détermine si le buzzer émettra le son ou non.
+Si l'heure prévue arrive, "state" prends la valeur 0 et le buzzer sonne. Si par contre l'on appuie sur le bouton d'arrêt, "state" prends la valeur 1 et le buzzer s'arrête. https://github.com/purplekan/S.P.A.R.K./assets/162813789/803af92f-aba5-456c-b046-8ecc90c4031f
 
-Cela nous a permis d'arriver au code suivant : 
-**// C++ code
-//initialiser la constante du buzzer
-#include <ThreeWire.h> 
-#include <RtcDS1302.h>
-#define Buzzer 2
-#define Arret 4
-int state = 0;
-ThreeWire myWire(7, 6, 8); // DAT, CLK, RST
-RtcDS1302<ThreeWire> Rtc(myWire);
-void setup()
-{
-  Serial.begin(9600);
-  pinMode(Buzzer, OUTPUT);
-  pinMode(Arret, INPUT);
-  Rtc.Begin();
 
-  RtcDateTime currentTime = RtcDateTime(__DATE__,__TIME__);
-  Rtc.SetDateTime(currentTime);
-}
+## b. L'écran 🖥 
+Toutes nos tentatives d'utiliser l'écran LCD avec l'I2C se sont soldées par des échecs. C'est certainement ce qui nous a le plus perdu de temps. En fin de compte, nous n'avons pas réussi à déterminer si le problème venait de l'écran, de l'I2C, du code ou des soudures faites. Nous avons dû nous rabattre sur l'écran LCD purement, ce qui a compliqué les câblages et nous a obligé à revoir les mesures du boîtier. Sur l'écran sera affiché la date et l'heure actuelle. 
+Lorsque l'alarme sonnera, l'écran affichera la tâche associée à cette heure une fois l'alrme désactivée.
 
-void loop()
-{
-  RtcDateTime now = Rtc.GetDateTime();
-  if (now.Hour() == 19 & now.Minute() == 9 & now.Second() == 24) {
-    state = 0;
-    digitalWrite(Buzzer, HIGH);
-  }
- if (digitalRead(Arret) == HIGH) {
-   state = 1; 
-   digitalWrite(Buzzer, LOW);
-  } 
-}**
+## c. Le joystick analogique 🕹 
+Aussi connu sous le nom de HW 504, c'est ce petit bijou qui servira à naviguer entre les diffférentes tâches 
+
+
 
