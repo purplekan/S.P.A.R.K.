@@ -122,7 +122,8 @@ Aussi connu sous le nom de HW 504, c'est ce petit bijou qui servira à naviguer 
 
 ## d. Le Real Time Clock 🕒 DS1302
 En utilisant les bibliothèques <ThreeWire.h> et <RtcDS1302.h>, nous sommes en mesure de récupérer l'heure et la date précise au moment du téléversement. Cependant je ne sais pas si le RTC se base sur l'heure de l'ordinateur 🖥 ou le GMT.  
-**if (now.Hour() == X & now.Minute() == Y & now.Second() == Z)** nous permet de créér une condition avec une heure spécifique. Nous aurions aussi pu ajouter la date.
+```if (now.Hour() == X & now.Minute() == Y & now.Second() == Z)```   
+nous permet de créér une condition avec une heure spécifique. Nous aurions aussi pu ajouter la date.
 C'est ce que l'on fera pour notre liste de tâches à afficher : des paramètres pour l'heure et la date de sorte que chaque tâche a des valeurs bien définies.  
 
 # III- Fonctionnement de S.P.A.R.K.
@@ -147,7 +148,7 @@ graph TD;
 ```
 Comment est ce que ça marche ?  
 A l'aide du module RTC DS1302, nous nous assurons dans un premier temps de récupérer l'heure avec précision. On vérifie ensuite si l'heure actuelle correspond à l'heure définie pour la tâche.  
-  
+ --- 
 Si c'est le cas, cela déclenche l'alarme, affiche la tâche associée sur l'écran LCD. Lorsqu'on appuie sur le bouton poussoir d'arrêt, l'alarme s'arrête, la prochaine tâche est affichée pendant dix secondes et enfin, la date et l'heure actuelles. Notons qu'il y a un intervalle d'une minute entre les vérifications.
 
 ## 2. Diagramme de flux de la naviguation entre les tâches 
@@ -174,7 +175,7 @@ Que se passe t-il lorsqu'on veut défiler les tâches vers le bas ?
  Lorsque la valeur X du joystick est négative et le bouton du joystick est enfoncé, la fonction "retour" est activée :
    - L'écran est effacé.
    - La page d'accueil, affichant la date et l'heure, est affichée.
-   
+   ***
 Lorsque la valeur X du joystick est positive et le bouton du joystick est enfoncé, la fonction "supprimer" est activée :
    - La tâche actuellement affichée est effacée de l'écran.
    - La tâche précédente ou suivante est affichée, selon le mouvement du joystick.
