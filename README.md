@@ -119,7 +119,8 @@ Nous avons commencé par la fonctionnalité de base de SPARK, celle qui lui perm
 - faire sonner l'alarme(le buzzer) à une heure précise et pouvoir l'arrêter à ce moment
 Vous pourrez retrouver le code dans le dossier documentation.
 En ce qui concerne le fonctionnement, c'est assez simple. Une constante "state" est créée. C'est elle qui détermine si le buzzer émettra le son ou non.
-Si l'heure prévue arrive, "state" prends la valeur 0 et le buzzer sonne. Si par contre l'on appuie sur le bouton d'arrêt, "state" prends la valeur 1 et le buzzer s'arrête. https://github.com/purplekan/S.P.A.R.K./assets/162813789/803af92f-aba5-456c-b046-8ecc90c4031f
+Si l'heure prévue arrive, "state" prends la valeur 0 et le buzzer sonne. Si par contre l'on appuie sur le bouton d'arrêt, "state" prends la valeur 1 et le buzzer s'arrête. 
+https://github.com/purplekan/S.P.A.R.K./assets/162813789/803af92f-aba5-456c-b046-8ecc90c4031f
 
 
 ## b. L'écran 🖥 
