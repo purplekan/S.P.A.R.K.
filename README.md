@@ -198,7 +198,7 @@ Lorsque la valeur X du joystick est positive et le bouton du joystick est enfonc
 
 Pour réaliser ce projet, nous avons dû consulter de nombreux sites et regardé des vidéos entre le 09 mars 2024 et le 23 mars 2023.  
 Voici les liens de nos sources : 
-- ![https://youtu.be/tG9jZt7ZrME?si=-BvY9c8qf68NFwxF]
+- https://youtu.be/tG9jZt7ZrME?si=-BvY9c8qf68NFwxF
 - https://youtu.be/1n_KjpMfVT0?si=cqUgA5AprYfO4R6C
 - https://youtu.be/8PMEe7VvovM?si=JuN84bVqriODaKHQ
 - https://youtu.be/BCvXOPih2zo?si=nwH4i1jCNLBUO8hy
@@ -232,8 +232,8 @@ Voici les liens de nos sources :
 -  https://exploreembedded.com/wiki/Analog_JoyStick_with_Arduino
 -  https://grabcad.com/library/adafruit-perma-proto-full-sized-breadboard-pcb-1
 -  https://grabcad.com/library/rtc-ds1302-2
--  ![https://grabcad.com/library/buzzer-kls3-mt-09-1]
--  
+-  https://grabcad.com/library/buzzer-kls3-mt-09-1
+-  https://youtu.be/83E3qum343k?si=5HMfTAawIBvblHVd
 
 
 
