@@ -147,8 +147,9 @@ graph TD;
 
 ```
 Comment est ce que ça marche ?  
+---
 A l'aide du module RTC DS1302, nous nous assurons dans un premier temps de récupérer l'heure avec précision. On vérifie ensuite si l'heure actuelle correspond à l'heure définie pour la tâche.  
- --- 
+
 Si c'est le cas, cela déclenche l'alarme, affiche la tâche associée sur l'écran LCD. Lorsqu'on appuie sur le bouton poussoir d'arrêt, l'alarme s'arrête, la prochaine tâche est affichée pendant dix secondes et enfin, la date et l'heure actuelles. Notons qu'il y a un intervalle d'une minute entre les vérifications.
 
 ## 2. Diagramme de flux de la naviguation entre les tâches 
@@ -169,13 +170,13 @@ graph TD;
 ```
 
 Que se passe t-il lorsqu'on veut défiler les tâches vers le bas ?
-
+---
  L'utilisateur peut naviguer entre les tâches à l'aide du joystick analogique (HW 504).
  Lorsque l'utilisateur glisse le joystick vers le bas, la tâche suivante est affichée.
  Lorsque la valeur X du joystick est négative et le bouton du joystick est enfoncé, la fonction "retour" est activée :
    - L'écran est effacé.
    - La page d'accueil, affichant la date et l'heure, est affichée.
-   ***
+   
 Lorsque la valeur X du joystick est positive et le bouton du joystick est enfoncé, la fonction "supprimer" est activée :
    - La tâche actuellement affichée est effacée de l'écran.
    - La tâche précédente ou suivante est affichée, selon le mouvement du joystick.
