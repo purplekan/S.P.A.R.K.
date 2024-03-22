@@ -198,7 +198,7 @@ Lorsque la valeur X du joystick est positive et le bouton du joystick est enfonc
 
 Pour réaliser ce projet, nous avons dû consulter de nombreux sites et regardé des vidéos entre le 09 mars 2024 et le 23 mars 2023.  
 Voici les liens de nos sources : 
-- https://youtu.be/tG9jZt7ZrME?si=-BvY9c8qf68NFwxF
+- ![https://youtu.be/tG9jZt7ZrME?si=-BvY9c8qf68NFwxF]
 - https://youtu.be/1n_KjpMfVT0?si=cqUgA5AprYfO4R6C
 - https://youtu.be/8PMEe7VvovM?si=JuN84bVqriODaKHQ
 - https://youtu.be/BCvXOPih2zo?si=nwH4i1jCNLBUO8hy
@@ -217,6 +217,22 @@ Voici les liens de nos sources :
 -  https://youtu.be/MlDi0vO9Evg?si=0nFy7E1L4pnkOr4A
 -  https://www.equascience.com/kits-d-experiences/5253-module-haut-parleur-pour-arduino.html
 -  https://grabcad.com/library/lcd-display-5
+-  https://grabcad.com/library/hw-504-joystick-1
+-  https://grabcad.com/library?page=1&time=all_time&sort=recent
+-  https://grabcad.com/library/micro-servo-sg-90-2
+-  https://grabcad.com/library/lcd-display-1602a-1
+-  https://www.moussasoft.com/bouton-poussoir-arduino
+-  https://forum.arduino.cc/t/comment-faire-un-bouton-reset-sur-un-projet-resolu/639784/6
+-  https://fr.vittascience.com/learn/tutorial.php?id=224#:~:text=sera%20ajout%C3%A9%20prochainement%5D-,Utilisation%20de%20l%27afficheur%20LCD,Attention.
+-  https://zestedesavoir.com/tutoriels/686/arduino-premiers-pas-en-informatique-embarquee/748_laffichage-une-autre-maniere-dinteragir/3443_les-ecrans-lcd/
+-  https://ledisrupteurdimensionnel.com/arduino/comment-relier-lecran-lcd-a-l-arduino-uno/
+-  https://rtmfm.cnrs.fr/wp-content/uploads/2022/01/Tutoriel-10-Arduino-programme-ecran-LCD.pdf
+-  https://github.com/TechKrowd/ArduinoLCD/blob/master/LCD_1602A.ino
+-  https://forum.arduino.cc/t/lcd-16x2-pcf8574t-black-boxes-problem/241702/2
+-  https://exploreembedded.com/wiki/Analog_JoyStick_with_Arduino
+-  https://grabcad.com/library/adafruit-perma-proto-full-sized-breadboard-pcb-1
+-  https://grabcad.com/library/rtc-ds1302-2
+-  ![https://grabcad.com/library/buzzer-kls3-mt-09-1]
 -  
 
 
