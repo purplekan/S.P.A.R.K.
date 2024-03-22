@@ -12,19 +12,22 @@ Nous sommes 17 étudiants en tout encadrés par 5 experts en électronique. Parm
 Après nous avoir expliqué en quoi devait consister le travail, nous avons été divisés en 4 groupes. C'est ainsi que Wilfried, Adebayo, Jules et Kenneth(moi) comme le responsable avons été réunis. 
 ![WhatsApp Image 2024-03-16 à 11 12 30_8e713fb9](https://github.com/purplekan/S.P.A.R.K./assets/162813789/06a1ec63-34f9-4546-a001-493c2e0c38f2)
 
-Il est important d'être méthodique et d'évoluer progressivement, c'est pourquoi nous avons commencé par nous réunir et proprement se définir en tant que groupe : V Team.
+Il est important d'être méthodique et d'évoluer progressivement, c'est pourquoi nous avons commencé par nous réunir et proprement se définir en tant que groupe : V Team.  
 ![image](https://github.com/purplekan/S.P.A.R.K./assets/162813789/453f7e84-2da2-4e54-819c-c35d618d3670)
 
 C'est dans ce groupe que nous avons échangé jusqu'à présent. Nous avons préféré d'éviter au maximum les messages vocaux afin de faciliter l'extraction d'informations un peu plus tard. 
 
 ## 1. Problématique
+---
 Pour avancer, il faut une raison. Qu'est ce qui nous a poussé à concevoir S.P.A.R.K. ?
 ![image](https://github.com/purplekan/S.P.A.R.K./assets/162813789/566ce750-a140-473e-a32b-714a58df361e)
 Il y a d'abord eu quelques idées de robots que nous avons eu mais c'est S.P.A.R.K. qui, au final, nous a intéressé du fait de son utilité, de sa simplicité et du thème du Bootcamp.
 Il vient résoudre le problème de mauvaise organisation auquel nombre d'entre nous fait face. 
+   
 S.P.A.R.K. doit être capable de **donner envie** de réaliser la tâche. Un grand effort sera donc consacré afin que l'apparence comme le comportement du robot soit intéressant. 
 
 ## 2. Fonctionnalités
+---
 Après discussion, nous avons enfin pu dégager les fonctionnalités de notre robot. Cela a nécessité la suppression de nombreuses autres fonctionnalités dû aux contraintes de matériel et de temps(deux semaines pour la conception). Voici les fonctionnalités qui ont été retenues :
 | Fonctionnalités             | Description                                                                                                                                 | Degré d'Importance |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
@@ -38,6 +41,7 @@ Après discussion, nous avons enfin pu dégager les fonctionnalités de notre ro
 Une fois ces fonctionnalités clairement définies, nous sommes passés aux choix de composants nécessaires à l'implémentation des fonctionnalités. 
 
 ## 3. Liste du matériel
+---
 Vu la limite de temps de deux semaines, nous avons dû choisir des composants simples et rapidement accessibles. Ensemble, nous avons réfléchi à quel matériel utiliser pour chaque fonctionnalité de S.P.A.R.K. 
 | Matériel                | Description                                                                                             |
 |-------------------------|---------------------------------------------------------------------------------------------------------|
@@ -57,6 +61,7 @@ Vu la limite de temps de deux semaines, nous avons dû choisir des composants si
 
 # II. Il est temps de se mettre au travail !
 ## 1. Répartition des tâches 
+---
 Après avoir clairement défini nos objectifs et ce dont on aura besoin pour les réaliser, il était enfin temps de partitionner le travail afin qu'il soit réalisé efficacement. Nous avions donc un groupe qui s'occupait des circuits à réaliser puis de l'autre, le groupe chargé de la modélisation 3D du robot.
 Bien entendu, il y a eu des moments où nous avons eu à discuter tous les quatres afin d'harmoniser nos travaux, afin de s'entraider et de s'échanger des conseils. 
 
