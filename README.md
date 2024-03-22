@@ -194,8 +194,30 @@ Lorsque la valeur X du joystick est positive et le bouton du joystick est enfonc
 
 
 
+# Sources
 
-
+Pour réaliser ce projet, nous avons dû consulter de nombreux sites et regardé des vidéos entre le 09 mars 2024 et le 23 mars 2023.  
+Voici les liens de nos sources : 
+- https://youtu.be/tG9jZt7ZrME?si=-BvY9c8qf68NFwxF
+- https://youtu.be/1n_KjpMfVT0?si=cqUgA5AprYfO4R6C
+- https://youtu.be/8PMEe7VvovM?si=JuN84bVqriODaKHQ
+- https://youtu.be/BCvXOPih2zo?si=nwH4i1jCNLBUO8hy
+- https://youtu.be/uCCrLPmaa_w?si=lMIUktS_0-ToLvVI
+- https://youtu.be/tG9jZt7ZrME?si=ldOMA3Ahjqu5gKYE
+-  https://youtu.be/hHIIWpZcYNs?si=tB9dx_kWs098L-zI
+-  https://youtu.be/1n_KjpMfVT0?si=P1G5ooKKE-DB9gqf
+-  https://youtu.be/1n_KjpMfVT0?si=JuLWSnHzW6YHPFlO
+-  https://youtu.be/MnzidiZ_6ok?si=XaeNTNJPcE1X0qT9
+-  https://youtu.be/gGXvWD2qPPc?si=HnjCoWSxPj2zBdh9
+-  https://youtu.be/AU9dxEcrVQ4?si=BhiTja3u5icZ2jBY
+-  https://youtu.be/MfmK55TREuQ?si=Hx29F9dxczJMhF8B
+-  https://youtu.be/2iFGNswJxo8?si=I4SY_IUFGSB-KXAu
+-  https://youtu.be/Athue7Wkjog?si=zV58WzsB2grrPPpO
+-  https://youtu.be/T85CoWZ_Zc8?si=1OjzBssnw8lvuH8N
+-  https://youtu.be/MlDi0vO9Evg?si=0nFy7E1L4pnkOr4A
+-  https://www.equascience.com/kits-d-experiences/5253-module-haut-parleur-pour-arduino.html
+-  https://grabcad.com/library/lcd-display-5
+-  
 
 
 
