@@ -195,7 +195,7 @@ Lorsque la valeur X du joystick est positive et le bouton du joystick est enfonc
 # Programme Arduino et explication
 ## 1. Fonction Accueil()
 ## a. Code arduino 
-```mermaid
+```python
 void Accueil() {
   RtcDateTime now = Rtc.GetDateTime();
   // Afficher la date et l'heure actuelles sur l'écran LCD
