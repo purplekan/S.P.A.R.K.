@@ -454,8 +454,8 @@ Voici les liens de nos sources :
 
 # Remerciements 
 Nous tenons à remercier quelques personnes pour nous avoir aidé directement ou non à réaliser S.P.A.R.K. :  
--  M. OLANLO, M. HANKEM, M. KAMEKPO, M. BAKAI pour nous avoir encadré par leurs bons conseils et pour nous avoir donné l'opportunité de participer à cet événement
--  M. LEENAERTS et M. ATADEGNON pour leurs conseils au sujet du code arduino, de la modélisation ainsi qu'au niveau de la documentation
+-  [M. OLANLO](https://www.linkedin.com/in/sylvestre-olanlo-9b7229186?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACvQ3FsBNHHTQC275Wll1vGHQk_kiTAp59o&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BRNbL%2F3UYTYuJH7%2FecRM28Q%3D%3D), [M. HANKEM](https://www.linkedin.com/in/justin-hankem-a97491175?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACmKJdMBky3_1KcOlS4GcgkNzIFx4lNP15c&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B%2FdqMAqcaRUaRa7KMyVoOKw%3D%3D), [M. KAMEKPO](https://www.linkedin.com/in/komlan-giovanni-kamekpo-3571b920a/), [M. BAKAI](https://www.linkedin.com/in/josaphat-bakai-0b1261253?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD6B9UUBkkrP2BP6diubeUNhCdbg9BukLYQ&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bc%2BinFkysRoWHiJm0Ol6gdw%3D%3D) pour nous avoir encadré par leurs bons conseils et pour nous avoir donné l'opportunité de participer à cet événement
+-  [M. LEENAERTS](https://github.com/THE07s/GarderMapBot.git) et [M. ATADEGNON](https://github.com/9Pierrot/Espace_de_travail_phoenix.git) pour leurs conseils au sujet du code arduino, de la modélisation ainsi qu'au niveau de la documentation
 -  Toute la communauté Arduino, en particulier vous qui avez mis vos découvertes à disposition de vos pairs
 
 Nous sommes heureux d'appartenir à cette communauté de passionés et espérons fortement que par notre projet, d'autres trouveront la motivation d'en faire autant.
