@@ -133,7 +133,9 @@ Aussi connu sous le nom de HW 504, c'est ce petit bijou qui servira à naviguer 
 
 ## d. Le Real Time Clock 🕒 DS1302
 En utilisant les bibliothèques <ThreeWire.h> et <RtcDS1302.h>, nous sommes en mesure de récupérer l'heure et la date précise au moment du téléversement. Cependant je ne sais pas si le RTC se base sur l'heure de l'ordinateur 🖥 ou le GMT.  
-```if (now.Hour() == X & now.Minute() == Y & now.Second() == Z)```   
+```python
+if (now.Hour() == X & now.Minute() == Y & now.Second() == Z)
+```   
 nous permet de créér une condition avec une heure spécifique. Nous aurions aussi pu ajouter la date.
 C'est ce que l'on fera pour notre liste de tâches à afficher : des paramètres pour l'heure et la date de sorte que chaque tâche a des valeurs bien définies.  
 
@@ -220,6 +222,32 @@ graph TD;
     A[Début] --> B[Récupération de la date et heure actuelles];
     B --> C[Affichage de la date et l'heure sur l'écran LCD];
     C --> D[Fin];
+```
+## 2. Fonction Gestion()
+## a. Code arduino
+```python
+void Gestion() {
+ RtcDateTime now = Rtc.GetDateTime();
+ if(now.Hour() == 7 & now.Minute() == 29 & now.Second() == 54) {
+  Tache = Tache_1;
+ } else if(now.Hour() == 9 & now.Minute() == 44 & now.Second() == 54) {
+  Tache = Tache_2;
+ } else if(now.Hour() == 13 & now.Minute() == 14 & now.Second() == 54) {
+  Tache = Tache_3;
+ } else {
+  //
+ }
+}
+```
+## b. Diagramme de flux
+```mermaid
+graph TD;
+    A[Début] --> B[Récupération de l'heure actuelle];
+    B --> C[Vérification de l'heure];
+    C -->|Heure spécifique?| D[Affectation de la tâche correspondante];
+    C -->|Non| E[Fin];
+    D --> E[Fin];
+
 ```
 # Sources
 
