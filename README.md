@@ -291,12 +291,10 @@ void afficherTacheSuivante() {
 graph TD;
     A[Début] --> B[Gestion des tâches];
     B --> C[Tâche == Tache_1?];
-    C -- Oui --> D[Afficher(Tache_2)];
-    C -- Non --> E[Tâche == Tache_2?];
-    E -- Oui --> F[Afficher(Tache_3)];
-    E -- Non --> G[Afficher(Tache_1)];
-
-
+    C -->|Oui| D[Afficher(Tache_2)];
+    C -->|Non| E[Tâche == Tache_2?];
+    E -->|Oui| F[Afficher(Tache_3)];
+    E -->|Non| G[Afficher(Tache_1)];
 ```
 # Sources
 
