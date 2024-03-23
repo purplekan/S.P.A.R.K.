@@ -198,7 +198,7 @@ Lorsque la valeur X du joystick est positive et le bouton du joystick est enfonc
 
 
 ## b. Diagramme de flux
-```
+```mermaid
 graph TD;
     A[Début] --> B[Affichage date et heure sur l'écran LCD];
     B --> C[Fin];
