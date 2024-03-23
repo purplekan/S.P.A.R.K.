@@ -508,6 +508,10 @@ graph TD;
 
 ```
 # ino Spark
+
+Nous avons finalement pu régler le soucis que nous avions avec l'I2C, en plus d'un souci de cablage avec le RTC nous sommes enfin parvenus à finaliser les parties importantes du code. Il ne reste plus qu'à importer les fonctions déjà vues plus haut.
+Gardez à l'esprit que le problème peut venir d'un mauvais cablage ou d'un composant donc aidez vous de votre moniteur série pour vérifier ce qui s'affiche sur l'écran LCD 
+
 ```cpp
 #include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
