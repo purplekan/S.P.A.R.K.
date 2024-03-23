@@ -261,8 +261,42 @@ void Afficher(String tache) {
   lcd.print(tache);
 }
 ```
+## b. Diagramme de flux
+```mermaid
+graph TD;
+    A[Début] --> B[Effacer l'écran LCD];
+    B --> C[Afficher la tâche sur l'écran LCD];
+    C --> D[Fin];
+    D --> A;
+
+```
 ## 4. Fonction afficherTacheSuivante()
 a. Code arduino 
+```python
+void afficherTacheSuivante() {
+  Gestion();
+  if (Tache == Tache_1) {
+    Afficher(Tache_2);
+  } else if (Tache == Tache_2) {
+    Afficher(Tache_3);
+  } else if (Tache == Tache_3) {
+    Afficher(Tache_1);
+  } else {
+    //
+  }
+}
+```
+## b. Diagramme de flux
+```mermaid
+graph TD;
+    A[Début] --> B[Gestion des tâches];
+    B --> C[Tâche == Tache_1?];
+    C -->|Oui| D[Afficher(Tache_2)];
+    C -->|Non| E[Tâche == Tache_2?];
+    E -->|Oui| F[Afficher(Tache_3)];
+    E -->|Non| G[Afficher(Tache_1)];
+
+```
 # Sources
 
 Pour réaliser ce projet, nous avons dû consulter de nombreux sites et regardé des vidéos entre le 09 mars 2024 et le 23 mars 2023.  
