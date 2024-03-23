@@ -195,7 +195,7 @@ Lorsque la valeur X du joystick est positive et le bouton du joystick est enfonc
    - La tâche précédente ou suivante est affichée, selon le mouvement du joystick.
 
 # Programme Arduino et explication
-## 1. Fonction Accueil()
+## 1. Fonction Accueil() 🕰️
 ## a. Code arduino 
 ```python
 void Accueil() {
@@ -223,7 +223,7 @@ graph TD;
     B --> C[Affichage de la date et l'heure sur l'écran LCD];
     C --> D[Fin];
 ```
-## 2. Fonction Gestion()
+## 2. Fonction Gestion() 📜
 ## a. Code arduino
 ```python
 void Gestion() {
@@ -249,7 +249,7 @@ graph TD;
     D --> E[Fin];
 
 ```
-## 3. Fonction Afficher()
+## 3. Fonction Afficher() 🖥️
 ## a. Code arduino
 ```python
 void Afficher(String tache) {
@@ -270,7 +270,7 @@ graph TD;
     D --> A;
 
 ```
-## 4. Fonction afficherTacheSuivante()
+## 4. Fonction afficherTacheSuivante() ➡️
 a. Code arduino 
 ```python
 void afficherTacheSuivante() {
@@ -295,6 +295,120 @@ graph TD;
     C -->|Non| E{Tâche == Tache_2?};
     E -->|Oui| F[Afficher Tache_3];
     E -->|Non| G[Afficher Tache_1];
+
+```
+## 5. Fonction supprimer() ❌
+## a. Code arduino 
+```python
+void supprimer() {
+  // Effacer la tâche actuellement affichée sur l'écran LCD
+  lcd.clear();
+  afficherTacheSuivante();
+}
+```
+## b. Diagramme de flux
+```mermaid
+graph TD;
+    A[Début] --> B[Effacement de l'écran LCD];
+    B --> C[Appel de la fonction afficherTacheSuivante()];
+    C --> D[Fin];
+
+```
+## 5. Fonction sonnerie() 🔔 
+## a. Code arduino 
+```python
+void sonnerie() {
+  // Déclencher l'alarme en mettant la sortie du buzzer à HIGH
+  digitalWrite(Buzzer, HIGH);
+
+  // Attendre jusqu'à ce que le bouton poussoir soit enfoncé pour arrêter l'alarme
+  while (digitalRead(Arret) == LOW) {
+    delay(100); // Attendre 100 ms avant de vérifier à nouveau l'état du bouton poussoir
+  }
+
+  // Arrêter l'alarme en mettant la sortie du buzzer à LOW
+  digitalWrite(Buzzer, LOW);
+}
+```
+## b. Diagramme de flux
+```mermaid
+graph TD;
+    A[Début] --> B[Déclenchement de l'alarme];
+    B --> C[Attente d'appui sur le bouton pour arrêter l'alarme];
+    C --> D[Arrêt de l'alarme];
+    D --> E[Fin];
+
+```
+## 5. Void loop() 🧑‍💻
+## a. Code arduino 
+```python
+void loop() {
+  RtcDateTime now = Rtc.GetDateTime();
+  ValeurX = analogRead(joyX);
+  ValeurY = analogRead(joyY);
+  // Gestion des tâches
+  Gestion();
+
+  // Si l'heure correspond à une tâche spécifique
+  if (now.Hour() == 7 && now.Minute() == 29 && now.Second() == 54) {
+    // Afficher la tâche et sonner l'alarme
+    Afficher(Tache);
+    sonnerie();
+    Afficher(Tache_2);
+    // Attendre pendant 10 secondes avant d'afficher la tâche suivante
+    delay(10000);
+  } else if (now.Hour() == 9 && now.Minute() == 44 && now.Second() == 54) {
+    Afficher(Tache);
+    sonnerie();
+    Afficher(Tache_3);
+    delay(10000);
+  } else if (now.Hour() == 13 && now.Minute() == 14 && now.Second() == 54) {
+    Afficher(Tache);
+    sonnerie();
+    Afficher(Tache_1);
+    delay(10000);
+  }
+  // Afficher la date et l'heure 
+  Accueil();
+  if (ValeurY == 1) {
+    // Afficher la tâche suivante
+    afficherTacheSuivante();
+  }
+
+  // Si la valeur X du joystick est négative et le bouton du joystick est enfoncé
+  if (ValeurX == 1 && digitalRead(HW) == HIGH) {
+    // Activer la fonction "retour"
+    retour();
+  }
+
+  // Si la valeur X du joystick est positive et le bouton du joystick est enfoncé
+  if (ValeurX == 1040 && digitalRead(HW) == HIGH) {
+    // Activer la fonction "supprimer"
+    supprimer();
+  }
+}
+```
+## b. Diagramme de flux
+```mermaid
+graph TD;
+    A[Début] --> B[Récupération de la date et heure actuelles];
+    B --> C[Gestion des tâches];
+    C --> D[Condition heure spécifique ?];
+    D -->|Oui| E[Affichage de la tâche et sonnerie];
+    E --> F[Attente];
+    F --> G[Affichage de la tâche suivante];
+    G --> H[Fin];
+    D -->|Non| I[Affichage de l'accueil];
+    I --> J[Condition déplacement joystick vers le bas ?];
+    J -->|Oui| K[Affichage tâche suivante];
+    K --> L[Fin];
+    J -->|Non| M[Condition joystick déplacé vers le haut et bouton enfoncé ?];
+    M -->|Oui| N[Retour];
+    N --> O[Fin];
+    M -->|Non| P[Condition joystick déplacé vers le bas et bouton enfoncé ?];
+    P -->|Oui| Q[Supprimer];
+    Q --> R[Fin];
+    P -->|Non| S[Fin];
 
 ```
 # Sources
