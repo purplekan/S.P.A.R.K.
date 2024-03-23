@@ -451,7 +451,15 @@ Voici les liens de nos sources :
 -  https://grabcad.com/library/buzzer-kls3-mt-09-1
 -  https://youtu.be/83E3qum343k?si=5HMfTAawIBvblHVd
 -  https://youtu.be/lJ4zk4b8dds?si=otElqShIFQyFtLrc
--  
+
+# Remerciements 
+Nous tenons à remercier quelques personnes pour nous avoir aidé directement ou non à réaliser S.P.A.R.K. :  
+-  M. OLANLO, M. HANKEM, M. KAMEKPO, M. BAKAI pour nous avoir encadré par leurs bons conseils et pour nous avoir donné l'opportunité de participer à cet événement
+-  M. LEENAERTS et M. ATADEGNON pour leurs conseils au sujet du code arduino, de la modélisation ainsi qu'au niveau de la documentation
+-  Toute la communauté Arduino, en particulier vous qui avez mis vos découvertes à disposition de vos pairs
+
+Nous sommes heureux d'appartenir à cette communauté de passionés et espérons fortement que par notre projet, d'autres trouveront la motivation d'en faire autant.
+
 
 
 
