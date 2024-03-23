@@ -195,6 +195,7 @@ Lorsque la valeur X du joystick est positive et le bouton du joystick est enfonc
    - La tâche précédente ou suivante est affichée, selon le mouvement du joystick.
 
 # Programme Arduino et explication
+# I. Cas avec l'écran LCD
 ## 1. Fonction Accueil() 🕰️
 ## a. Code arduino 
 ```python
@@ -408,6 +409,102 @@ graph TD;
     P -->|Oui| Q[Supprimer];
     Q --> R[Fin];
     P -->|Non| S[Fin];
+
+```
+# II. Cas avec LCD + I2C
+## 1. Afficher la date et l'heure 
+## a. Code Arduino
+```python
+#include <Wire.h> 
+#include <LiquidCrystal_I2C.h>
+#include <ThreeWire.h>
+#include <RtcDS1302.h>
+
+LiquidCrystal_I2C lcd(0x27, 16, 2);  // set the LCD address to 0x27 for a 16 chars and 2 line display
+ThreeWire myWire(3, 6, 5); // DAT, CLK, RST
+RtcDS1302<ThreeWire> Rtc(myWire);
+
+void setup()
+{
+  Serial.begin(9600); // Initialise la communication série
+  lcd.init();                      // initialize the lcd 
+  lcd.backlight();
+  Rtc.Begin();
+  RtcDateTime currentTime = RtcDateTime(__DATE__,__TIME__);
+  Rtc.SetDateTime(currentTime);
+
+  // Affiche les informations de démarrage dans le moniteur série
+  Serial.println("Initialisation terminée.");
+  Serial.print("Date et heure actuelles : ");
+  Serial.print(currentTime.Year());
+  Serial.print("-");
+  Serial.print(currentTime.Month());
+  Serial.print("-");
+  Serial.print(currentTime.Day());
+  Serial.print(" ");
+  Serial.print(currentTime.Hour());
+  Serial.print(":");
+  Serial.print(currentTime.Minute());
+  Serial.print(":");
+  Serial.println(currentTime.Second());
+}
+void afficherHeure() {
+  RtcDateTime currentTime = Rtc.GetDateTime(); // Obtention de l'heure actuelle
+
+  // Effacer la ligne précédente
+  lcd.setCursor(0, 0);
+  lcd.print("                "); // Effacez la ligne avec des espaces
+
+  // Afficher l'heure sur l'écran LCD
+  lcd.setCursor(0, 0); // Positionnez le curseur au début de la ligne
+  lcd.print("Heure : ");
+  lcd.print(currentTime.Hour()); // Afficher l'heure
+  lcd.print(":");
+  lcd.print(currentTime.Minute()); // Afficher les minutes
+  lcd.print(":");
+  lcd.print(currentTime.Second()); // Afficher les secondes
+
+  //Affiche la date
+  // Effacer la ligne précédente
+  lcd.setCursor(0, 1);
+  lcd.print("                "); // Effacez la ligne avec des espaces
+  // Afficher la date sur l'écran LCD
+  lcd.setCursor(0, 1); // Positionnez le curseur au début de la ligne
+  lcd.print("Date : ");
+  lcd.print(currentTime.Day()); // Afficher l'heure
+  lcd.print(":");
+  lcd.print(currentTime.Month()); // Afficher les minutes
+  lcd.print(":");
+  lcd.print(currentTime.Year()); // Afficher les secondes
+
+  // Affiche les informations de l'heure actuelle dans le moniteur série
+  Serial.print("Heure actuelle : ");
+  Serial.print(currentTime.Hour());
+  Serial.print(":");
+  Serial.print(currentTime.Minute());
+  Serial.print(":");
+  Serial.println(currentTime.Second());
+
+  delay(500); // Attendre une seconde avant de mettre à jour l'écran LCD
+}
+void loop() {
+  afficherHeure();
+}
+```
+## b. Diagramme de flux
+```mermaid
+graph TD;
+    A[Début] --> B[Initialisation];
+    B --> C[Initialisation de la communication série];
+    C --> D[Initialisation de l'écran LCD];
+    D --> E[Activation du rétroéclairage];
+    E --> F[Initialisation du module RTC];
+    F --> G[Récupération de l'heure actuelle];
+    G --> H[Affichage de l'heure sur l'écran LCD];
+    H --> I[Affichage de la date sur l'écran LCD];
+    I --> J[Affichage des informations dans le moniteur série];
+    J --> K[Attente de 500 millisecondes];
+    K --> G;
 
 ```
 # Sources
