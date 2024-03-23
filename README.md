@@ -507,6 +507,139 @@ graph TD;
     K --> G;
 
 ```
+# ino Spark
+```cpp
+#include <Wire.h> 
+#include <LiquidCrystal_I2C.h>
+#include <ThreeWire.h>
+#include <RtcDS1302.h>
+
+#define Buzzer 2
+#define Arret 4
+LiquidCrystal_I2C lcd(0x27, 16, 2);  // set the LCD address to 0x27 for a 16 chars and 2 line display
+ThreeWire myWire(3, 6, 5); // DAT, CLK, RST
+RtcDS1302<ThreeWire> Rtc(myWire);
+const int HW = 52;
+const int joyX = A0;
+const int joyY = A1;
+int ValeurX ;
+int ValeurY ;
+String Tache_1 = "Automatique";
+String Tache_2 = "Electronique";
+String Tache_3 = "Electromagnetisme";
+String Tache = Tache_1;
+
+void setup()
+{
+  Serial.begin(9600); // Initialise la communication série
+  lcd.init();                      // initialize the lcd 
+  lcd.backlight();
+  Rtc.Begin();
+  RtcDateTime currentTime = RtcDateTime(__DATE__,__TIME__);
+  Rtc.SetDateTime(currentTime);
+
+  // Affiche les informations de démarrage dans le moniteur série
+  Serial.println("Initialisation terminée.");
+  Serial.print("Date et heure actuelles : ");
+  Serial.print(currentTime.Year());
+  Serial.print("-");
+  Serial.print(currentTime.Month());
+  Serial.print("-");
+  Serial.print(currentTime.Day());
+  Serial.print(" ");
+  Serial.print(currentTime.Hour());
+  Serial.print(":");
+  Serial.print(currentTime.Minute());
+  Serial.print(":");
+  Serial.println(currentTime.Second());
+}
+void afficherHeure() {
+  RtcDateTime currentTime = Rtc.GetDateTime(); // Obtention de l'heure actuelle
+
+  // Effacer la ligne précédente
+  lcd.setCursor(0, 0);
+  lcd.print("                "); // Effacez la ligne avec des espaces
+
+  // Afficher l'heure sur l'écran LCD
+  lcd.setCursor(0, 0); // Positionnez le curseur au début de la ligne
+  lcd.print("Heure : ");
+  lcd.print(currentTime.Hour()); // Afficher l'heure
+  lcd.print(":");
+  lcd.print(currentTime.Minute()); // Afficher les minutes
+  lcd.print(":");
+  lcd.print(currentTime.Second()); // Afficher les secondes
+
+  //Affiche la date
+  // Effacer la ligne précédente
+  lcd.setCursor(0, 1);
+  lcd.print("                "); // Effacez la ligne avec des espaces
+  // Afficher la date sur l'écran LCD
+  lcd.setCursor(0, 1); // Positionnez le curseur au début de la ligne
+  lcd.print("Date : ");
+  lcd.print(currentTime.Day()); // Afficher l'heure
+  lcd.print(":");
+  lcd.print(currentTime.Month()); // Afficher les minutes
+  lcd.print(":");
+  lcd.print(currentTime.Year()); // Afficher les secondes
+
+  // Affiche les informations de l'heure actuelle dans le moniteur série
+  Serial.print("Heure actuelle : ");
+  Serial.print(currentTime.Hour());
+  Serial.print(":");
+  Serial.print(currentTime.Minute());
+  Serial.print(":");
+  Serial.println(currentTime.Second());
+
+  delay(500); // Attendre une seconde avant de mettre à jour l'écran LCD
+}
+void sonnerie() {
+  // Déclencher l'alarme en mettant la sortie du buzzer à HIGH
+  digitalWrite(Buzzer, HIGH);
+
+  // Attendre jusqu'à ce que le bouton poussoir soit enfoncé pour arrêter l'alarme
+  while (digitalRead(Arret) == LOW) {
+    delay(100); // Attendre 100 ms avant de vérifier à nouveau l'état du bouton poussoir
+  }
+
+  // Arrêter l'alarme en mettant la sortie du buzzer à LOW
+  digitalWrite(Buzzer, LOW);
+}
+void retour() {
+  // Effacer l'écran LCD
+  lcd.clear();
+  Accueil();
+}
+void Afficher(String tache) {
+  // Effacer l'écran LCD
+  lcd.clear();
+  
+  // Afficher la tâche sur l'écran LCD
+  lcd.setCursor(0, 0);
+  lcd.print(tache);
+}
+void afficherTacheSuivante() {
+  Gestion();
+  if (Tache == Tache_1) {
+    Afficher(Tache_2);
+  } else if (Tache == Tache_2) {
+    Afficher(Tache_3);
+  } else if (Tache == Tache_3) {
+    Afficher(Tache_1);
+  } else {
+    //
+  }
+}
+void supprimer() {
+  // Effacer la tâche actuellement affichée sur l'écran LCD
+  lcd.clear();
+  afficherTacheSuivante();
+}
+
+void loop() {
+  afficherHeure();
+
+}
+```
 # Sources
 
 Pour réaliser ce projet, nous avons dû consulter de nombreux sites et regardé des vidéos entre le 09 mars 2024 et le 23 mars 2023.  
