@@ -195,13 +195,31 @@ Lorsque la valeur X du joystick est positive et le bouton du joystick est enfonc
 # Programme Arduino et explication
 ## 1. Fonction Accueil()
 ## a. Code arduino 
-
-
+```
+void Accueil() {
+  RtcDateTime now = Rtc.GetDateTime();
+  // Afficher la date et l'heure actuelles sur l'écran LCD
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print(now.Day());
+  lcd.print("/");
+  lcd.print(now.Month());
+  lcd.print("/");
+  lcd.print(now.Year());
+  lcd.setCursor(0, 1);
+  lcd.print(now.Hour());
+  lcd.print(":");
+  lcd.print(now.Minute());
+  lcd.print(":");
+  lcd.print(now.Second());
+}
+```
 ## b. Diagramme de flux
 ```mermaid
 graph TD;
-    A[Début] --> B[Affichage date et heure sur l'écran LCD];
-    B --> C[Fin];
+    A[Début] --> B[Récupération de la date et heure actuelles];
+    B --> C[Affichage de la date et l'heure sur l'écran LCD];
+    C --> D[Fin];
 ```
 # Sources
 
