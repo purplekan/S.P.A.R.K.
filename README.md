@@ -249,6 +249,22 @@ graph TD;
     D --> E[Fin];
 
 ```
+## 3. Fonction Afficher()
+## a. Code arduino
+```python
+void Gestion() {
+ RtcDateTime now = Rtc.GetDateTime();
+ if(now.Hour() == 7 & now.Minute() == 29 & now.Second() == 54) {
+  Tache = Tache_1;
+ } else if(now.Hour() == 9 & now.Minute() == 44 & now.Second() == 54) {
+  Tache = Tache_2;
+ } else if(now.Hour() == 13 & now.Minute() == 14 & now.Second() == 54) {
+  Tache = Tache_3;
+ } else {
+  //
+ }
+}
+```
 # Sources
 
 Pour réaliser ce projet, nous avons dû consulter de nombreux sites et regardé des vidéos entre le 09 mars 2024 et le 23 mars 2023.  
