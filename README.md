@@ -310,9 +310,8 @@ void supprimer() {
 ```mermaid
 graph TD;
     A[Début] --> B[Effacement de l'écran LCD];
-    B --> C[Appel de la fonction afficherTacheSuivante()];
+    B --> C[Appel de la fonction afficherTacheSuivante];
     C --> D[Fin];
-
 ```
 ## 5. Fonction sonnerie() 🔔 
 ## a. Code arduino 
