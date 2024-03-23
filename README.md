@@ -192,8 +192,16 @@ Lorsque la valeur X du joystick est positive et le bouton du joystick est enfonc
    - La tâche actuellement affichée est effacée de l'écran.
    - La tâche précédente ou suivante est affichée, selon le mouvement du joystick.
 
+# Programme Arduino et explication
+## 1. Fonction Accueil()
+## a. Code arduino 
 
 
+## b. Diagramme de flux
+```graph TD;
+    A[Début] --> B[Affichage date et heure sur l'écran LCD];
+    B --> C[Fin];
+```
 # Sources
 
 Pour réaliser ce projet, nous avons dû consulter de nombreux sites et regardé des vidéos entre le 09 mars 2024 et le 23 mars 2023.  
@@ -234,6 +242,8 @@ Voici les liens de nos sources :
 -  https://grabcad.com/library/rtc-ds1302-2
 -  https://grabcad.com/library/buzzer-kls3-mt-09-1
 -  https://youtu.be/83E3qum343k?si=5HMfTAawIBvblHVd
+-  https://youtu.be/lJ4zk4b8dds?si=otElqShIFQyFtLrc
+-  
 
 
 
